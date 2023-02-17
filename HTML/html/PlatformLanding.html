@@ -15,12 +15,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+        <script src="/js/rating.js"></script>
     <link rel="stylesheet" href="/css/platformlanding.css">
+      <!-- rating.js file -->
+      
     <title>Platform Landing Page</title>
 </head>
 
-<body>
+<body onload="myFunction()">
+
+   
     <header>
         <div class="container-fluid">
 
@@ -70,9 +74,9 @@
 
                 </div>
             </nav>
-
+<hr>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row row-search">
                     <div class="col-lg-6 col-sm-6">
                         <nav class="navbar navbar-expand-lg navbar-light  search-nav">
 
@@ -139,12 +143,192 @@
                     <div class="col-lg-1">
 
                     </div>
+
+
+
+                   
+                </div>
+            </div>
+<hr class="hr2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-11">
+
+                        <button class="search-history">Tree Plantation
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="btn-s-short">Canada
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="btn-s-short">Toronto
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="btn-s-short">Montreal
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="search-history">Environment
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="btn-s-short">Nutrition
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="search-history">Anthropology
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <button class="btn-s-long">Environmental Science
+
+                            <img src="/images/cancel1.png" alt="cancel" class="img-cancel">
+
+                        </button>
+
+                        <a href="#" class="clear-all">Clear all</a>
+                        <br>
+                        <div style="display: flex;">
+                        <label class="explore72"> Explore <b>72 more missions</b> </label>
+
+
+                        <a class="nav-link dropdown-toggle dropdown-sort" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <button  id="grdbtn" onclick="grid1()">
+                        <img src="/images/grid.png" alt="">
+                    </button>
+                    <button   id="lstbtn" onclick="list1()">
+                        <img src="/images/list.png" alt="">
+                    </button>
+                     </div>
+                    </div>
+                   
+                    <div class="col-lg-1">
+
+                    </div>
                 </div>
             </div>
 
+            <!-- <div class="container-fluid">
+                <div class="row">
+                    <div class="gridview">
 
+                        <div class="card card1 col-lg-3">
+                            <img src="/images/imgenv.png" class="card-img-top" alt="...">
+                            <button class="missions">Environment</button>
+                            <div class="card-body">
+                                
+                              <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                              <p class="card-text">Tree Canada</p>
+                              
+                             
+                            <div class="hr-btn">
+                                <hr class="line-hr">
+                                <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                            </div>
 
+                            <div class="seats-time">
 
+                                <img src="/images/Seats-left.png" alt="Seats-left">
+                               <strong>10</strong>
+                               <p class="seat-left-txt">Seats left</p>
+
+                               <img src="/images/deadline.png" alt="" class="img-clock">
+
+                            </div>
+                         
+                            <br><br>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                           
+                          <div class="card other-cards col-lg-3">
+                            <img src="/images/imgedu.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+
+                          <div class="card other-cards col-lg-3">
+                            <img src="/images/imgchild.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                           
+                            <div class="col-lg-3" ></div>
+                            
+                            
+                          </div>
+                          
+                    </div>
+                </div>
+<br><br><br><br><br><br><br><br>
+                <div class="row">
+                    <div class="gridview">
+
+                        <div class="card card1">
+                            <img src="/images/imgenv.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                           
+                          <div class="card other-cards">
+                            <img src="/images/imgedu.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+
+                          <div class="card other-cards">
+                            <img src="/images/imgchild.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+
+                            <div class="col-lg-3"></div>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div> -->
+
+<br>
 
 
 
@@ -152,6 +336,430 @@
 
 
     </header>
+
+    <!-- Grid View -->
+<div class="grid-view" id="grdp" >
+
+    <div class="container grid-container ">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="/images/imgenv.png" class="card-img-top" alt="...">
+              <button class="missions">Environment</button>
+              <div class="card-body">
+    
+                <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore...</p>
+                <p class="card-text">Tree Canada</p>
+    
+    
+                <div class="hr-btn">
+                  <hr class="line-hr">
+                  <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                </div>
+    
+                <img src="/images/Seats-left.png" alt="Seats-left" class="img-seat">
+               
+                <div class="seats-time">
+    
+    
+                  <p class="seat-left-no">10</p>
+                  <p class="seat-left-txt">Seats left</p>
+                </div>
+                <img src="/images/deadline.png" alt="" class="img-clock">
+                <div class="seats-time">
+    
+                  <p class="date-txt">09/01/2023</p>
+                  <p class="deadline-txt">Deadline</p>
+                </div>
+                <hr class="line-hr">
+    
+                <button class="apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+              </div>
+    
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="/images/imgedu.png" class="card-img-top" alt="...">
+              <button class="missions">Environment</button>
+              <div class="card-body">
+    
+                <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore...</p>
+                <p class="card-text">Tree Canada</p>
+    
+    
+                <div class="hr-btn">
+                  <hr class="line-hr">
+                  <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                </div>
+    
+                <img src="/images/Seats-left.png" alt="Seats-left" class="img-seat">
+               
+                <div class="seats-time">
+    
+    
+                  <p class="seat-left-no">10</p>
+                  <p class="seat-left-txt">Seats left</p>
+                </div>
+                <img src="/images/deadline.png" alt="" class="img-clock">
+                <div class="seats-time">
+    
+                  <p class="date-txt">09/01/2023</p>
+                  <p class="deadline-txt">Deadline</p>
+                </div>
+    
+                <hr class="line-hr">
+    
+                <button class="apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+              </div>
+    
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="/images/imgchild.png" class="card-img-top" alt="...">
+              <button class="missions">Environment</button>
+              <div class="card-body">
+    
+                <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore...</p>
+                <p class="card-text">Tree Canada</p>
+    
+    
+                <div class="hr-btn">
+                  <hr class="line-hr">
+                  <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                </div>
+    
+                <img src="/images/Seats-left.png" alt="Seats-left" class="img-seat">
+               
+                <div class="seats-time">
+    
+    
+                  <p class="seat-left-no">10</p>
+                  <p class="seat-left-txt">Seats left</p>
+                </div>
+                <img src="/images/deadline.png" alt="" class="img-clock">
+                <div class="seats-time">
+    
+                  <p class="date-txt">09/01/2023</p>
+                  <p class="deadline-txt">Deadline</p>
+                </div>
+    
+                <hr class="line-hr">
+    
+                <button class="apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+              </div>
+    
+            </div>
+          </div>
+         
+         
+         
+          <div class="container grid-container">
+          <div class="row row2">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="/images/imgenv.png" class="card-img-top" alt="...">
+              <button class="missions">Environment</button>
+              <div class="card-body">
+    
+                <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore...</p>
+                <p class="card-text">Tree Canada</p>
+    
+    
+                <div class="hr-btn">
+                  <hr class="line-hr">
+                  <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                </div>
+    
+                <img src="/images/Seats-left.png" alt="Seats-left" class="img-seat">
+               
+                <div class="seats-time">
+    
+    
+                  <p class="seat-left-no">10</p>
+                  <p class="seat-left-txt">Seats left</p>
+                </div>
+                <img src="/images/deadline.png" alt="" class="img-clock">
+                <div class="seats-time">
+    
+                  <p class="date-txt">09/01/2023</p>
+                  <p class="deadline-txt">Deadline</p>
+                </div>
+    
+                <hr class="line-hr">
+    
+                <button class="apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+              </div>
+    
+            </div>
+          </div>
+    
+       
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="/images/imgedu.png" class="card-img-top" alt="...">
+              <button class="missions">Environment</button>
+              <div class="card-body">
+    
+                <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore...</p>
+                <p class="card-text">Tree Canada</p>
+    
+    
+                <div class="hr-btn">
+                  <hr class="line-hr">
+                  <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                </div>
+    
+                <img src="/images/Seats-left.png" alt="Seats-left" class="img-seat">
+               
+                <div class="seats-time">
+    
+    
+                  <p class="seat-left-no">10</p>
+                  <p class="seat-left-txt">Seats left</p>
+                </div>
+                <img src="/images/deadline.png" alt="" class="img-clock">
+                <div class="seats-time">
+    
+                  <p class="date-txt">09/01/2023</p>
+                  <p class="deadline-txt">Deadline</p>
+                </div>
+    
+                <hr class="line-hr">
+    
+                <button class="apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="/images/imgchild.png" class="card-img-top" alt="...">
+              <button class="missions">Environment</button>
+              <div class="card-body">
+    
+                <h4 class="card-title">Grow Trees - On the path to <br>environment sustainability</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore...</p>
+                <p class="card-text">Tree Canada</p>
+    
+    
+                <div class="hr-btn">
+                  <hr class="line-hr">
+                  <button class="btn-date">From 10/01/2023 until 25/02/2023</button>
+                </div>
+    
+                <img src="/images/Seats-left.png" alt="Seats-left" class="img-seat">
+               
+                <div class="seats-time">
+    
+    
+                  <p class="seat-left-no">10</p>
+                  <p class="seat-left-txt">Seats left</p>
+                </div>
+                <img src="/images/deadline.png" alt="" class="img-clock">
+                <div class="seats-time">
+    
+                  <p class="date-txt">09/01/2023</p>
+                  <p class="deadline-txt">Deadline</p>
+                </div>
+    
+                <hr class="line-hr">
+    
+                <button class="apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+              </div>
+    
+            </div>
+          </div>
+    
+    
+        </div>
+    
+      </div>
+    </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- List View -->
+
+    <div class="list-view active" id="listp">
+
+        
+            <div class="row lst-row">
+                <div class="col-md-4">
+                    <img src="/images/lst-img1.png" alt="" class="lst-img">
+                </div>
+
+                <div class="col-md-8">
+                   
+                    <h4 class="lst-card-title">Grow Trees - On the path to environment sustainability</h4>
+                    <p class="card-text">This summer we are aiming to plant 40000 trees</p>
+                    
+                    <img src="/images/Seats-left.png" alt="Seats-left" class="lst-img-seat">
+                  <div class="seatcombine" style="display: flex;">
+                  
+                    <div class="lst-seats-time">
+                        <p class="lst-seat-left-no">10</p>
+                        <p class="lst-seat-left-txt">Seats left</p>
+                      </div>
+
+                      <img src="/images/deadline.png" alt="" class="lst-img-clock">
+                      <div class="lst-seats-time">
+          
+                        <p class="lst-date-txt">09/01/2023</p>
+                        <p class="lst-deadline-txt">Deadline</p>
+                      </div>
+
+                      <button class="lst-btn-date">From 10/01/2023 until 25/02/2023</button>
+
+                    </div>
+
+                   
+    
+                <button class="lst-apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+                </div>
+
+
+                <div class="col-md-4">
+                    <img src="/images/lst-img1.png" alt="" class="lst-img">
+                </div>
+
+                <div class="col-md-8">
+                   
+                    <h4 class="lst-card-title">Grow Trees - On the path to environment sustainability</h4>
+                    <p class="card-text">This summer we are aiming to plant 40000 trees</p>
+                    
+                    <img src="/images/Seats-left.png" alt="Seats-left" class="lst-img-seat">
+                  <div class="seatcombine" style="display: flex;">
+                  
+                    <div class="lst-seats-time">
+                        <p class="lst-seat-left-no">10</p>
+                        <p class="lst-seat-left-txt">Seats left</p>
+                      </div>
+
+                      <img src="/images/deadline.png" alt="" class="lst-img-clock">
+                      <div class="lst-seats-time">
+          
+                        <p class="lst-date-txt">09/01/2023</p>
+                        <p class="lst-deadline-txt">Deadline</p>
+                      </div>
+
+                      <button class="lst-btn-date">From 10/01/2023 until 25/02/2023</button>
+
+                    </div>
+
+                   
+    
+                <button class="lst-apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+                </div>
+
+
+
+
+                <div class="col-md-4">
+                    <img src="/images/lst-img1.png" alt="" class="lst-img">
+                </div>
+
+                <div class="col-md-8">
+                   
+                    <h4 class="lst-card-title">Grow Trees - On the path to environment sustainability</h4>
+                    <p class="card-text">This summer we are aiming to plant 40000 trees</p>
+                    
+                    <img src="/images/Seats-left.png" alt="Seats-left" class="lst-img-seat">
+                  <div class="seatcombine" style="display: flex;">
+                  
+                    <div class="lst-seats-time">
+                        <p class="lst-seat-left-no">10</p>
+                        <p class="lst-seat-left-txt">Seats left</p>
+                      </div>
+
+                      <img src="/images/deadline.png" alt="" class="lst-img-clock">
+                      <div class="lst-seats-time">
+          
+                        <p class="lst-date-txt">09/01/2023</p>
+                        <p class="lst-deadline-txt">Deadline</p>
+                      </div>
+
+                      <button class="lst-btn-date">From 10/01/2023 until 25/02/2023</button>
+
+                    </div>
+
+                   
+    
+                <button class="lst-apply-btn">Apply
+    
+                  <img src="/images/right-arrow.png" alt="" class="right-arrow">
+    
+                </button>
+                </div>
+
+    </div>
+    
+
+    <!-- Javascript -->
+
+
+    <script>
+        function  myFunction(){
+           document.getElementById('listp').style.display="none" ;
+        }
+        function list1() {
+           document.getElementById('grdp').style.display="none" ;
+           document.getElementById('listp').style.display="block" ;
+       }
+       function grid1() {
+           document.getElementById('listp').style.display="none" ;
+           document.getElementById('grdp').style.display="block" ;
+       }
+
+       </script>
 
 
 
