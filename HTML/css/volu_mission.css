@@ -88,10 +88,17 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E8E8E8;
     border-radius: 14px;
-    width: 210px;
+    width: 20%;
     height: 30px;
     color: grey;
    margin-left: -5%;
+
+   transform: translate(0,-58%);
+    margin-left: 0%;
+    margin-top: 2%;
+    height: auto;
+    font-size: medium;
+   
     
 }
 
@@ -240,14 +247,16 @@
     }
     .city
     {
-        margin-top: 25%;
+        margin-top: 10%;
         margin-left: 8%;
         color: grey;
+        
     }
     .london
     {
-        margin-top: -6%;
+        /* margin-top: -2%; */
         margin-left: 8%;
+        
     }
     .apply-row
     {
@@ -287,7 +296,7 @@
     letter-spacing: 0px;
     color: grey;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 2vw;
     margin-left: 25%;
 }
 .links1
@@ -352,7 +361,8 @@ a:hover
 }
 .img-name
 {
-    margin-left: 5%;
+    /* margin-left: 0%; */
+    text-align: center;
 }
 .vol-img
 {
@@ -360,6 +370,7 @@ a:hover
     height: 70px;
     background: transparent 0% 0% no-repeat padding-box;
     border-radius: 50%;
+    
     
 }
 .vol-name
@@ -373,6 +384,94 @@ a:hover
 {
     height: auto;
 }
+
+/* Related Mission */
+
+.card-line
+{
+    height: 0.1%;
+    width: 100%;
+    color: grey;
+    /* margin-top: 5%; */
+    border: 1px solid rgb(212, 211, 211);
+    text-align: center;
+    
+    
+}
+
+.btn-date
+{
+    transform: translate(0,-58%);
+    margin-left: 0%;
+    width: 70%;
+    height: auto;
+    font-size: medium;
+    /* margin-top: 5%; */
+    
+}
+.already-vol-main
+{
+    margin-top: -5%;
+    color: grey;
+}
+
+.already-vol
+{
+    margin-left: 10%;
+    width: 100%;
+    /* margin-top: -10%; */
+}
+.already-vol p
+{
+    margin-top: -10%;
+}
+
+/* Ratings */
+
+.rating {
+    position: relative;
+    width: 180px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 5px;
+    overflow: hidden;
+ 
+   
+ }
+ 
+ .rating__result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-10px) translateX(-5px);
+    z-index: -9;
+  
+    color: #ebebeb8e;
+    pointer-events: none;
+ }
+ 
+ .rating__star {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #dabd18b2;
+    transition: filter linear .3s;
+ }
+ 
+ .rating__star:hover {
+    filter: drop-shadow(1px 1px 4px gold);
+ }
+
+
+
+
+
+
+
+
+
 
 
 
